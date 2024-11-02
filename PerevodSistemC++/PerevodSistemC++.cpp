@@ -57,7 +57,56 @@ int main(int argc, char* argv[])
         }
         i++;
     }
+    int arr[100];
+    for (int k = 0; k < 100; k++) {
+        arr[k] == 0;
+    }
+    i = 0;
+    int t;
+    cin >> t;
+    int p = 0;
+    int k = 99;
+    if (summa1 == 0) {
+        cout << "0";
+    }
+    while (summa1 > 0) {
+        arr[k] = (summa1 % t);
+        summa1 = summa1 / t;
+        k--;
+        p++;
+    }
+    k++;
+    cout << "Ответ: ";
+    for (; k < 100; k++) {
+        if (arr[k] >= 10) {
+            cout << (char)(arr[k] + 55);
+        }
+        else {
+            cout << arr[k];
+        }
+    }
+    if (summa2 != 0) {
+        cout << ".";
+    }
+    int v;
+    int schetchik = 0;
+    while (schetchik < 5 && summa2>0) {
+        summa2 = summa2 * t;
+        v = floor(summa2);
+        summa2 = summa2 - v;
 
+
+        arr[schetchik] = v;
+        if (v >= 10) {
+            cout << (char)(arr[schetchik] + 55);
+        }
+        else {
+            cout << arr[schetchik];
+        }
+        schetchik++;
+    }
+    cout << endl;
+    cout << endl;
 
 
     system("pause");
